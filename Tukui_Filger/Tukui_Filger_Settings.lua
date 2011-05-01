@@ -338,36 +338,22 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -198, -146 },
 
-			-- Earth Shield/Erdschild
-			{ spellID = 974, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Riptide/Springflut
-			{ spellID = 61295, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Lightning Shield/Blitzschlagschild
-			{ spellID = 324, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Water Shield/Wasserschild
-			{ spellID = 52127, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-		},
-		{
-			Name = "T_BUFF_ICON",
-			Direction = "RIGHT",
-			Interval = 4,
-			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 198, -146 },
-
-			-- Earth Shield/Erdschild
-			{ spellID = 974, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			-- Riptide/Springflut
-			{ spellID = 61295, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
+			-- Nature's Swiftness
+			{ spellID = 16188, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Spiritwalker's grace
+			{ spellID = 79206, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Unleash flame
+			{ spellID = 73683, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "P_PROC_ICON",
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -198 },
 
 			-- Maelstorm Weapon
-			{ spellID = 53817, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- { spellID = 53817, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Shamanistic Rage
 			{ spellID = 30823, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Clearcasting
@@ -375,7 +361,7 @@ ns.Filger_Spells = {
 			-- Tidal Waves
 			{ spellID = 51562, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Ancestral Fortitude
-			{ spellID = 16236, size = 47, barWidth = 187, unitId = "target", caster = "player", filter = "BUFF" },
+			-- { spellID = 16236, size = 47, barWidth = 187, unitId = "target", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -387,24 +373,13 @@ ns.Filger_Spells = {
 			-- Hex
 			{ spellID = 51514, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Storm Strike
-			{ spellID = 17364, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- { spellID = 17364, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Earth Shock
-			{ spellID = 8042, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- { spellID = 8042, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Frost Shock
 			{ spellID = 8056, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Flame Shock
 			{ spellID = 8050, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-		},
-		{
-			Name = "F/DEBUFF_BAR",
-			Direction = "UP",
-			IconSide = "LEFT",
-			Interval = 4,
-			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
-
-			-- Hex
-			{ spellID = 51514, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
 	["PALADIN"] = {
