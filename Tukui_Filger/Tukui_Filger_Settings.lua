@@ -86,6 +86,8 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
+			-- Demoralizing roar
+			{ spellID = 99, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },			
 			-- Hibernate/Winterschlaf
 			{ spellID = 2637, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Entangling Roots/Wucherwurzeln
@@ -113,21 +115,21 @@ ns.Filger_Spells = {
 			-- Faerie Fire/Feenfeuer
 			{ spellID = 770, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 		},
-		{
-			Name = "F/DEBUFF_BAR",
-			Direction = "UP",
-			IconSide = "LEFT",
-			Interval = 4,
-			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
+		-- {
+			-- Name = "F/DEBUFF_BAR",
+			-- Direction = "UP",
+			-- IconSide = "LEFT",
+			-- Interval = 4,
+			-- Mode = "BAR",
+			-- setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
-			-- Hibernate/Winterschlaf
-			{ spellID = 2637, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
-			-- Entangling Roots/Wucherwurzeln
-			{ spellID = 339, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
-			-- Cyclone/Wirbelsturm
-			{ spellID = 33786, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
-		},
+			-- -- Hibernate/Winterschlaf
+			-- { spellID = 2637, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
+			-- -- Entangling Roots/Wucherwurzeln
+			-- { spellID = 339, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
+			-- -- Cyclone/Wirbelsturm
+			-- { spellID = 33786, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
+		-- },
 
 		{
 			Name = "CD/HEAL",
@@ -336,7 +338,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -198, -146 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -116 },
 
 			-- Nature's Swiftness
 			{ spellID = 16188, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -350,7 +352,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -198, -198 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -168 },
 
 			-- Maelstorm Weapon
 			-- { spellID = 53817, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -368,7 +370,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -168 },
 
 			-- Hex
 			{ spellID = 51514, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
